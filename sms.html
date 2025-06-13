@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>문자 상담 바로가기</title>
+  <style>
+    body {
+      background: #e3f2fd;
+      color: #1a237e;
+      font-family: 'Segoe UI', 'Malgun Gothic', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      margin-bottom: 24px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .sms-btn {
+      display: inline-block;
+      padding: 20px 60px;
+      background: #1976d2;
+      color: #fff;
+      border-radius: 32px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 24px #1976d255;
+      transition: background 0.2s, box-shadow 0.2s;
+      margin-bottom: 20px;
+    }
+    .sms-btn:hover {
+      background: #145ea8;
+      box-shadow: 0 8px 28px #1976d288;
+    }
+    .desc {
+      font-size: 1rem;
+      color: #333;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>문자 상담 바로가기</h1>
+    <a class="sms-btn" href="sms:01057069097?body=문의합니다">📩 문자 보내기</a>
+    <div class="desc">
+      버튼을 누르면 문자 앱이 자동으로 열립니다.<br>
+      (PC에서는 동작하지 않고, 스마트폰에서만 작동)
+    </div>
+  </div>
+</body>
+</html>
