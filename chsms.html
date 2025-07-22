@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>문자 상담 바로가기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 50px 50px;
+      background-color: #e3f2fd; /* 짙은 남색 전체 배경 */
+      font-family: 'Segoe UI', sans-serif;
+      color: #1a237e;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-area {
+      width: 100%;
+      max-width: 1000px;
+      background-color: #e3f2fd; /* 청회색빛 단색 */
+      padding: 60px 250px;
+      min-height: 50vh;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 30px 32px 64px 32px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 48px;
+      color: #0d47a1;
+    }
+
+    .sms-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: #1976d2;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(25, 118, 210, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .sms-btn:hover {
+      background: #1565c0;
+      box-shadow: 0 8px 24px rgba(21, 101, 192, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .sms-btn:active {
+      background: #0d47a1;
+      transform: translateY(0);
+    }
+
+    .icon {
+      font-size: 1.4rem;
+    }
+
+    .desc {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: #555;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    @media (max-height: 600px) {
+      .center-area {
+        padding: 20px 10px;
+      }
+
+      .card {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center-area">
+    <div class="card">
+      <h1>📬 무료 소통방 입장</h1>
+      <a class="sms-btn" href="smsto:01057967012?body=최교수%0A무료소통방 입장%0A100퍼센트 무료급등주%0A300퍼센트 강력히든주">
+        <span class="icon">📩</span>
+        <span>지금 문자 보내기</span>
+      </a>
+      <div class="desc">
+        ※ 아이폰은 문자 연결이 안됩니다.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
